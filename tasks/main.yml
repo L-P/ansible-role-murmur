@@ -3,6 +3,16 @@
   apt:
     name="mumble-server"
 
+- name: Copy default
+  template:
+    src="default.j2"
+    dest="/etc/default/mumble-server"
+    owner="root"
+    group="root"
+    mode="0644"
+  notify:
+    - "restart murmur"
+
 - name: Copy configuration
   template:
     src="mumble-server.ini.j2"
