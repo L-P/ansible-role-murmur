@@ -22,3 +22,12 @@
     mode="0640"
   notify:
     - "restart murmur"
+
+- name: Start server
+  service:
+    name="mumble-server"
+    state="started"
+
+- name: Set SuperUser password
+  no_log: true
+  command: murmurd -ini /etc/mumble-server.ini -supw "{{murmur_superuser_password}}"

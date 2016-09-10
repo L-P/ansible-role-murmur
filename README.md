@@ -8,6 +8,13 @@ A Debian-based distribution.
 
 Role Variables
 --------------
+## mandatory configuration
+``yaml
+# Password for SuperUser
+murmur_superuser_password:
+```
+
+## murmur configuration
 See the [defaults](defaults/main.yml). Default values come from the default configuration file
 installed by murmur on Ubuntu Xenial.
 
