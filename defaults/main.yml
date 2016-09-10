@@ -1,0 +1,70 @@
+---
+# Upstream sample configuration in comments.
+
+murmur_database: "/var/lib/mumble-server/mumble-server.sqlite"
+
+murmur_dbDriver:
+murmur_dbUsername:
+murmur_dbPassword:
+murmur_dbHost:
+murmur_dbPort:
+murmur_dbPrefix: murmur_
+murmur_dbOpts:
+
+# murmur_ice: "tcp -h 127.0.0.1 -p 6502"
+murmur_ice:
+murmur_icesecretread:
+murmur_icesecretwrite:
+
+# murmur_dbus: "system"
+murmur_dbus:
+murmur_dbusservice: "net.sourceforge.mumble.murmur"
+
+murmur_autobanAttempts: 10
+murmur_autobanTimeframe: 120
+murmur_autobanTime: 300
+
+murmur_logfile: "/var/log/mumble-server/mumble-server.log"
+murmur_pidfile: "/var/run/mumble-server/mumble-server.pid"
+murmur_welcometext: "<br />Welcome to this server running <b>Murmur</b>.<br />Enjoy your stay!<br />"
+murmur_port: 64738
+murmur_host:
+murmur_serverpassword:
+murmur_bandwidth: 72000
+murmur_users: 100
+
+# murmur_opusthreshold: 100
+murmur_opusthreshold:
+# murmur_channelnestinglimit: 10
+murmur_channelnestinglimit:
+# murmur_channelname: "[ \\-=\\w\\#\\[\\]\\{\\}\\(\\)\\@\\|]+"
+murmur_channelname:
+# murmur_username: "[-=\\w\\[\\]\\{\\}\\(\\)\\@\\|\\.]+"
+murmur_username:
+# murmur_textmessagelength: 5000
+murmur_textmessagelength:
+# murmur_imagemessagelength: 131072
+murmur_imagemessagelength:
+# murmur_allowhtml: "False"
+murmur_allowhtml:
+# murmur_logdays: 31
+murmur_logdays:
+
+# murmur_registerName: "Mumble Server"
+murmur_registerName:
+murmur_registerPassword: secret
+murmur_registerUrl: http://mumble.sourceforge.net/
+murmur_registerHostname:
+
+# murmur_bonjour: "True"
+murmur_bonjour:
+
+murmur_sslCert:
+murmur_sslKey:
+murmur_sslCiphers: "EECDH+AESGCM:AES256-SHA:AES128-SHA"
+
+murmur_uname: "mumble-server"
+# murmur_certrequired: "False"
+murmur_certrequired:
+# murmur_sendversion: "True"
+murmur_sendversion:

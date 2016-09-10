@@ -1,0 +1,12 @@
+dependencies: []
+galaxy_info:
+  author: "Léo Peltier"
+  description: "Install murmur on Ubuntu"
+  license: "MIT"
+  galaxy_tags: ["mumble", "mumble-server", "murmur", "voip"]
+
+  min_ansible_version: 2.1
+  platforms:
+    - name: "Ubuntu"
+      versions:
+        - "all"
