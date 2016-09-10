@@ -9,7 +9,7 @@ A Debian-based distribution.
 Role Variables
 --------------
 ## mandatory configuration
-``yaml
+```yaml
 # Password for SuperUser
 murmur_superuser_password:
 ```
